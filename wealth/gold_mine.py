@@ -32,7 +32,8 @@
         else:
             print("Thanks for playing!")
             game_active = False
-#  
+#  ret_val = myFunc(7)
+print(ret_val)
 #  Author: <I.J. Acuna>
 #
 # ------------------------------------------------------------------------
