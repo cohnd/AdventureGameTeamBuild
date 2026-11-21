@@ -8,7 +8,7 @@
 #  Description: Player is attacked by wolves and loses a random amount 
 #  of health.
 #
-#  Author: <Your Name>
+#  Author: <Manuel Josue Parra Flores
 #
 # ------------------------------------------------------------------------
 
@@ -16,4 +16,5 @@ import random
 
 def forest_attack(health):
     print("Forest Attack!")
-    return health-5
+    damage = random.randint(1, 5)
+    return health-damage 
