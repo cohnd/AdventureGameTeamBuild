@@ -7,12 +7,22 @@
 #
 #  Description: Player gains random amount of gold from winning a duel.
 #
-#  Author: <Your Name>
+#  Author: <Sean Phillips>
 #
 # ------------------------------------------------------------------------
 
 import random
 
 def duel_knight(gold):
-    print("Duel Knight")
-    return gold+5
+    print("You came across another knight, time to duel!!")
+
+    winnings = random.randint(1, 100)
+    print("You won the duel and earned", winnings, "gold!")
+
+    return gold + winnings
+
+# Simple driver
+gold = 1
+gold = duel_knight(gold)
+
+print("Your gold is now:", gold)
