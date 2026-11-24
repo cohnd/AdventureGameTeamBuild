@@ -21,7 +21,6 @@ def duel_knight(gold):
 
     return gold + winnings
 
-# Simple driver
 gold = 1
 gold = duel_knight(gold)
 
