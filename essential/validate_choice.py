@@ -8,11 +8,15 @@
 #  Description: Keeps asking the user for input until they enter one of 
 #    the allowed choices. Ensures the menu never crashes.
 #
-#  Author: <Your Name>
+#  Author: Austin Morris
 #
 # ------------------------------------------------------------------------
 
 def validate_choice(prompt, choices):
-    print("Validate Choice")
-    c = input("Choice: ")
-    return c
+    choice = input(prompt).strip()
+
+    while choice not in choices:
+        print("That's not possible, please try again")
+        choice = input(prompt).strip()
+
+    return choice

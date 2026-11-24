@@ -7,7 +7,7 @@
 #
 #  Description: Player finds treasure and gains a random amount of gold.
 #
-#  Author: <Your Name>
+#  Author: Steven Peltier
 #
 # ------------------------------------------------------------------------
 
@@ -15,4 +15,6 @@ import random
 
 def find_treasure(gold):
     print("Find Treasure")
-    return gold+5
+    treasure_amount = random.randint(200, 2000)
+    print(f"You found {treasure_amount} gold!")
+    return gold + treasure_amount
